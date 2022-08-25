@@ -10,8 +10,6 @@
     }
 
     &__title {
-        margin: 0;
-        @include title-text;
         max-width: 700px;
         justify-self: flex-start;
     }
