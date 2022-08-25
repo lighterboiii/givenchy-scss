@@ -1,0 +1,26 @@
+.looks {
+    @include font-family;
+    padding: 0 20px 80px;
+
+    &__title {
+        padding: 0 0 40px;
+    }
+
+    &__images-list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        @include row-layout;
+        flex-wrap: wrap;
+        row-gap: 0;
+    }
+
+    &__list-item {
+        margin: 0;
+        max-height: 436px;
+    }
+    
+    &__image {
+        padding: 0;
+    }
+}
