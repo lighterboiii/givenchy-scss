@@ -1,1 +1,87 @@
-@import url('../vendor/fonts/fonts.css');
+.main {
+  margin: 0;
+}
+
+.header {
+  font-family: "Prompt", "Arial", sans-serif;
+  background: #E7E7E2;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+.header__button {
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #E7E7E2;
+  border: none;
+  cursor: pointer;
+  gap: 16px;
+  justify-content: center;
+  left: 0;
+  padding: 20px 20px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.header__burger-img {
+  max-height: 48px;
+  max-width: 48px;
+}
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 20px 0;
+  position: relative;
+}
+.header__image {
+  max-width: 700px;
+}
+.header__title {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 64px;
+  color: #0A0A0A;
+  text-transform: uppercase;
+  margin: 0;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  justify-content: center;
+}
+.header__subscribe-button {
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #0A0A0A;
+  border: 0.5px solid #0A0A0A;
+  box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  width: 350px;
+}
+.header__subscribe-button:hover {
+  background: #FFF;
+  border-color: #FFF;
+  color: #0A0A0A;
+}/*# sourceMappingURL=index.css.map */
