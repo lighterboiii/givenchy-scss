@@ -1,0 +1,105 @@
+.footer {
+    background: $blacky;
+    @include font-family;
+
+    &__wrapper {
+        @include column-layout;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 700px;
+        padding: 40px 0 40px;
+        gap: 40px;
+    }
+
+    &__input {
+        background-color: $blacky;
+        max-width: 700px;
+        width: 100%;
+        @include rm-styles;
+    }
+
+    &__input-wrapper {
+        @include row-layout;
+        height: 48px;
+        border: 0.5px solid $whitey;
+        box-sizing: border-box;
+    }
+
+    &__submit-button {
+        @include button-text;
+        @include row-layout;
+        align-items: center;
+        background-color: $whitey;
+        justify-content: center;
+        border: none;
+        max-width: 108px;
+        width: 100%;
+        color: $blacky;
+        cursor: pointer;
+
+        &:hover {
+            color: $whitey;
+            background-color: $blacky;
+            border: 0.5px solid $whitey;
+        }
+    }
+
+    &__title {
+        @include small-text;
+        margin: 0;
+        text-align: center;
+        color: $whitey;
+    }
+
+    &__text {
+        margin: 0;
+        @include small-text;
+        color: $whitey;
+    }
+
+    &__form {
+        @include column-layout;
+        gap: 20px;
+    }
+
+    &__copyright {
+        @extend .footer__text;
+    }
+
+    &__label {
+        @include row-layout;
+        gap: 10px;
+        color: $whitey;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__checkbox {
+        position: absolute;
+        width: 1px; 
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+
+        &:checked + .footer__checkbox-visible {
+            background-image: url('../../images/checked.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50%;
+        }
+    }
+
+    &__checkbox-visible {
+        box-sizing: border-box;
+        border: 1px solid $whitey;
+        max-width: 24px;
+        width: 100%;
+        height: 24px;
+        cursor: pointer;
+    }
+
+
+}

@@ -17,6 +17,8 @@
 @mixin button-text {
     font-style: normal;
     font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
 }
@@ -46,4 +48,13 @@
 @mixin column-layout {
     display: flex;
     flex-direction: column;
+}
+
+@mixin rm-styles {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }

@@ -25,6 +25,8 @@
 .header__button {
   font-style: normal;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   display: flex;
@@ -75,6 +77,8 @@
 .header__subscribe-button {
   font-style: normal;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   display: flex;
@@ -196,4 +200,113 @@
 }
 .looks__image {
   padding: 0;
+}
+
+.footer {
+  background: #0A0A0A;
+  font-family: "Prompt", "Arial", sans-serif;
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 40px 0 40px;
+  gap: 40px;
+}
+.footer__input {
+  background-color: #0A0A0A;
+  max-width: 700px;
+  width: 100%;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+.footer__input-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  border: 0.5px solid #FFF;
+  box-sizing: border-box;
+}
+.footer__submit-button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #FFF;
+  justify-content: center;
+  border: none;
+  max-width: 108px;
+  width: 100%;
+  color: #0A0A0A;
+  cursor: pointer;
+}
+.footer__submit-button:hover {
+  color: #FFF;
+  background-color: #0A0A0A;
+  border: 0.5px solid #FFF;
+}
+.footer__title {
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #0A0A0A;
+  margin: 0;
+  text-align: center;
+  color: #FFF;
+}
+.footer__text, .footer__copyright {
+  margin: 0;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #0A0A0A;
+  color: #FFF;
+}
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__label {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.footer__checkbox:checked + .footer__checkbox-visible {
+  background-image: url("../../images/checked.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+.footer__checkbox-visible {
+  box-sizing: border-box;
+  border: 1px solid #FFF;
+  max-width: 24px;
+  width: 100%;
+  height: 24px;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
