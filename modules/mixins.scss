@@ -21,6 +21,23 @@
     text-transform: uppercase;
 }
 
+@mixin small-text {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $blacky;
+}
+
+@mixin large-text {
+    color: $blacky;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 44px;
+}
+
 @mixin row-layout {
     display: flex;
     flex-direction: row;
