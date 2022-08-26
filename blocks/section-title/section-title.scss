@@ -1,4 +1,8 @@
 .section-title {
     @include title-text;
     margin: 0;
+
+    @media screen and (max-width: 1023px) {
+        @include tablet-title;
+    }
 }

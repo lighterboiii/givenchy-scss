@@ -81,8 +81,8 @@
         align-self: flex-end;
 
         @media screen and (max-width: 1023px) {
-            @include tablet-title;
             max-width: 485px;
+            @include tablet-title;
         }
 
         @media screen and (max-width: 767px) {

@@ -19,10 +19,6 @@
     &__title {
         justify-self: flex-start;
         max-width: 700px;
-
-        @media screen and (max-width: 1023px) {
-            @include tablet-title;
-        }
     }
 
     &__text {
