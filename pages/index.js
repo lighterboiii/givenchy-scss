@@ -6,6 +6,7 @@ headerButton.addEventListener('click', function (evt) {
     footerInput.scrollIntoView({
         behavior: 'smooth'
     });
+    footerInput.select();
 });
 
 // реализована прокрутка до footer__input по клику на header__subscribe-button
