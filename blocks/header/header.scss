@@ -6,27 +6,6 @@
     position: relative;
     z-index: 0;
 
-    &__button {
-        @include button-text;
-        @include row-layout;
-        align-items: center;
-        background: $creamy;
-        border: none;
-        cursor: pointer;
-        gap: 20px;
-        justify-content: center;
-        left: 0;
-        padding: 20px 20px 0;
-        position: absolute;
-        top: 0;
-        z-index: 3;
-    }
-
-    &__burger-img {
-        max-height: 48px;
-        max-width: 48px;
-    }
-
     &__wrapper {
         display: flex;
         flex-direction: row-reverse;
@@ -42,6 +21,41 @@
         @media screen and (max-width: 1023px) {
             min-height: 646px;
         }
+
+        @media screen and (max-width: 767px) {
+            min-height: 426px;
+        }
+    }
+
+    &__button {
+        @include button-text;
+        @include row-layout;
+        align-items: center;
+        background: $creamy;
+        border: none;
+        cursor: pointer;
+        gap: 20px;
+        justify-content: center;
+        left: 0;
+        padding: 20px 20px 0;
+        position: absolute;
+        top: 0;
+        z-index: 3;
+
+        @media screen and (max-width: 767px) {
+            padding: 16px 20px 0;
+            @include mobile-button-text;
+        }
+    }
+
+    &__burger-img {
+        max-height: 48px;
+        max-width: 48px;
+
+        @media screen and (max-width: 767px) {
+            max-height: 24px;
+            max-width: 24px;
+        }
     }
 
     &__image {
@@ -50,10 +64,14 @@
         top: 0;
         left: 0;
         z-index: 1;
-        
+
 
         @media screen and (max-width: 1023px) {
             max-width: 486px;
+        }
+
+        @media screen and (max-width: 767px) {
+            max-width: 320px;
         }
     }
 
@@ -63,8 +81,13 @@
         align-self: flex-end;
 
         @media screen and (max-width: 1023px) {
-            max-width: 485px;
             @include tablet-title;
+            max-width: 485px;
+        }
+
+        @media screen and (max-width: 767px) {
+            max-width: 280px;
+            @include mobile-title;
         }
     }
 
@@ -73,6 +96,10 @@
         gap: 32px;
         justify-content: center;
         z-index: 2;
+
+        @media screen and (max-width: 767px) {
+            margin: 0;
+        }
     }
 
     &__subscribe-button {
@@ -89,6 +116,12 @@
         justify-content: center;
         line-height: 24px;
         max-width: 350px;
+
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+            height: 44px;
+            line-height: 20px;
+        }
 
         &:hover {
             background: $whitey;

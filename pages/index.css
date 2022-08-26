@@ -43,9 +43,22 @@
   top: 0;
   z-index: 3;
 }
+@media screen and (max-width: 767px) {
+  .header__button {
+    padding: 16px 20px 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 .header__burger-img {
   max-height: 48px;
   max-width: 48px;
+}
+@media screen and (max-width: 767px) {
+  .header__burger-img {
+    max-height: 24px;
+    max-width: 24px;
+  }
 }
 .header__wrapper {
   display: flex;
@@ -64,6 +77,11 @@
     min-height: 646px;
   }
 }
+@media screen and (max-width: 767px) {
+  .header__wrapper {
+    min-height: 426px;
+  }
+}
 .header__image {
   max-width: 700px;
   position: absolute;
@@ -74,6 +92,11 @@
 @media screen and (max-width: 1023px) {
   .header__image {
     max-width: 486px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__image {
+    max-width: 320px;
   }
 }
 .header__title {
@@ -89,9 +112,16 @@
 }
 @media screen and (max-width: 1023px) {
   .header__title {
-    max-width: 485px;
     font-size: 32px;
     line-height: 40px;
+    max-width: 485px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__title {
+    max-width: 280px;
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 .header__content {
@@ -100,6 +130,11 @@
   gap: 32px;
   justify-content: center;
   z-index: 2;
+}
+@media screen and (max-width: 767px) {
+  .header__content {
+    margin: 0;
+  }
 }
 .header__subscribe-button {
   font-style: normal;
@@ -121,6 +156,13 @@
   justify-content: center;
   line-height: 24px;
   max-width: 350px;
+}
+@media screen and (max-width: 767px) {
+  .header__subscribe-button {
+    font-size: 14px;
+    height: 44px;
+    line-height: 20px;
+  }
 }
 .header__subscribe-button:hover {
   background: #FFF;
