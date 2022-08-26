@@ -7,11 +7,11 @@
     }
 
     &__images-list {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
         @include row-layout;
         flex-wrap: wrap;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
         row-gap: 0;
     }
 
