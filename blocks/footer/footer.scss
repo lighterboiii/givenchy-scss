@@ -14,6 +14,10 @@
         @media screen and (max-width: 1023px) {
             max-width: 486px;
         }
+
+        @media screen and (max-width: 767px) {
+            max-width: 280px;
+        }
     }
 
     &__input {
@@ -24,6 +28,11 @@
         max-width: 700px;
         padding: 12px 24px;
         width: 100%;
+        box-sizing: border-box;
+
+        @media screen and (max-width: 767px) {
+         width: 280px;
+        }
     }
 
     &__input-wrapper {
@@ -31,6 +40,11 @@
         border: 0.5px solid $whitey;
         box-sizing: border-box;
         height: 48px;
+
+        @media screen and (max-width: 767px) {
+            @include column-layout;
+            height: 88px;
+        }
     }
 
     &__submit-button {
@@ -45,6 +59,11 @@
         max-width: 108px;
         width: 100%;
 
+        @media screen and (max-width: 767px) {
+            max-width: 280px;
+            height: 44px;
+        }
+
         &:hover {
             background-color: $blacky;
             border: 0.5px solid $whitey;
@@ -57,12 +76,10 @@
         color: $whitey;
         margin: 0;
         text-align: center;
-    }
 
-    &__text {
-        @include small-text;
-        color: $whitey;
-        margin: 0;
+        @media screen and (max-width: 767px) {
+            @include mobile-small-text;
+        }
     }
 
     &__form {
@@ -71,7 +88,14 @@
     }
 
     &__copyright {
-        @extend .footer__text;
+        @include small-text;
+        color: $whitey;
+        margin: 0;
+
+        @media screen and (max-width: 767px) {
+            @include mobile-small-text;
+            text-align: center;
+        }
     }
 
     &__label {
@@ -82,6 +106,10 @@
         font-weight: 400;
         gap: 10px;
         line-height: 24px;
+
+        @media screen and (max-width: 767px) {
+            @include mobile-button-text;
+        }
     }
 
     &__checkbox {

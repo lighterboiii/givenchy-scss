@@ -14,6 +14,13 @@
             padding: 60px 20px 70px;
             max-width: 768px;
         }
+
+        @media screen and (max-width: 767px) {
+            @include column-layout;
+            gap: 20px;
+            padding: 40px 20px 40px;
+            min-width: 280px;
+        }
     }
 
     &__title {
@@ -35,6 +42,10 @@
         gap: 24px;
         margin: 0;
         z-index: 2;
+
+        @media screen and (max-width: 767px) {
+            gap: 20px;
+        }
     }
 
     &__text_size_small {
@@ -44,10 +55,18 @@
             max-width: 373px;
             max-height: 384px;
         }
+
+        @media screen and (max-width: 1023px) {
+            @include mobile-small-text;
+        }
     }
 
     &__text_size_big {
         @include large-text;
+
+        @media screen and (max-width: 767px) {
+            @include mobile-large-text;
+        }
     }
 
     &__section {
@@ -62,6 +81,12 @@
             max-width: 768px;
             padding: 0;
         }
+
+        @media screen and (max-width: 767px) {
+            @include column-layout;
+            gap: 20px;
+            min-width: 280px;
+        }
     }
 
     &__section_size_s {
@@ -70,6 +95,10 @@
         @media screen and (max-width: 1023px) {
             padding: 0 11px 120px 20px;
             gap: 60px;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding: 0 20px 40px;
         }
     }
 
@@ -81,6 +110,10 @@
             min-height: 484px;
             padding: 0 20px 70px;
         }
+
+        @media screen and (max-width: 767px) {
+            padding-bottom: 40px;
+        }
     }
 
     &__section_size_xl {
@@ -91,10 +124,19 @@
             min-height: 607px;
             padding: 0 20px 80px;
         }
+
+        @media screen and (max-width: 767px) {
+           padding-bottom: 40px;
+           min-height: 350px;
+        }
     }
 
-    &__about-img {
+    &__img {
         z-index: 1;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
     }
 
     &__img_size_s {
@@ -112,10 +154,16 @@
         z-index: 1;
 
         @media screen and (max-width: 1023px) {
-            width: 364px;
-            height: 452px;
+            max-width: 364px;
+            max-height: 452px;
             top: 50px;
             right: 141px;
+        }
+
+        @media screen and (max-width: 767px) {
+            position: relative;
+            left: 0;
+            top: 0;
         }
     }
 
@@ -127,6 +175,12 @@
 
         @media screen and (max-width: 1023px) {
             max-width: 485px;
+        }
+
+        @media screen and (max-width: 767px) {
+            position: relative;
+            left: 0;
+            top: 0;
         }
     }
 
