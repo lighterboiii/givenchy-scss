@@ -1,26 +1,36 @@
 .looks {
+    margin: 0;
     @include font-family;
     padding: 0 20px 80px;
+
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 1400px;
+    }
 
     &__title {
         padding: 0 0 40px;
     }
 
     &__images-list {
-        @include row-layout;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
         list-style-type: none;
         margin: 0;
         padding: 0;
         row-gap: 0;
+        width: 100%;
     }
 
     &__list-item {
         margin: 0;
         max-height: 436px;
+        max-width: 350px;
     }
     
     &__image {
         padding: 0;
+        width: 100%;
     }
 }

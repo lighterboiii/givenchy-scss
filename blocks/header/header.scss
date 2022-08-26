@@ -13,13 +13,13 @@
         background: $creamy;
         border: none;
         cursor: pointer;
-        gap: 16px;
+        gap: 20px;
         justify-content: center;
         left: 0;
-        padding: 20px 20px;
+        padding: 20px 20px 0;
         position: absolute;
         top: 0;
-        z-index: 1;
+        z-index: 3;
     }
 
     &__burger-img {
@@ -28,26 +28,51 @@
     }
 
     &__wrapper {
-        @include row-layout;
+        display: flex;
+        flex-direction: row-reverse;
+        height: 100%;
         margin: 0 auto;
         max-width: 1440px;
+        min-height: 900px;
         padding: 0 20px 0;
         position: relative;
+        width: 100%;
+        box-sizing: border-box;
+
+        @media screen and (max-width: 1023px) {
+            min-height: 646px;
+        }
     }
 
     &__image {
         max-width: 700px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        
+
+        @media screen and (max-width: 1023px) {
+            max-width: 486px;
+        }
     }
 
     &__title {
         @include title-text;
+        max-width: 700px;
+        align-self: flex-end;
+
+        @media screen and (max-width: 1023px) {
+            max-width: 485px;
+            @include tablet-title;
+        }
     }
 
     &__content {
         @include column-layout;
-        align-items: flex-start;
         gap: 32px;
         justify-content: center;
+        z-index: 2;
     }
 
     &__subscribe-button {
@@ -63,7 +88,7 @@
         height: 48px;
         justify-content: center;
         line-height: 24px;
-        width: 350px;
+        max-width: 350px;
 
         &:hover {
             background: $whitey;

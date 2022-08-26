@@ -35,13 +35,13 @@
   background: #E7E7E2;
   border: none;
   cursor: pointer;
-  gap: 16px;
+  gap: 20px;
   justify-content: center;
   left: 0;
-  padding: 20px 20px;
+  padding: 20px 20px 0;
   position: absolute;
   top: 0;
-  z-index: 1;
+  z-index: 3;
 }
 .header__burger-img {
   max-height: 48px;
@@ -49,14 +49,32 @@
 }
 .header__wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+  height: 100%;
   margin: 0 auto;
   max-width: 1440px;
+  min-height: 900px;
   padding: 0 20px 0;
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1023px) {
+  .header__wrapper {
+    min-height: 646px;
+  }
 }
 .header__image {
   max-width: 700px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+@media screen and (max-width: 1023px) {
+  .header__image {
+    max-width: 486px;
+  }
 }
 .header__title {
   font-size: 48px;
@@ -66,13 +84,22 @@
   line-height: 64px;
   color: #0A0A0A;
   text-transform: uppercase;
+  max-width: 700px;
+  align-self: flex-end;
+}
+@media screen and (max-width: 1023px) {
+  .header__title {
+    max-width: 485px;
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .header__content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 32px;
   justify-content: center;
+  z-index: 2;
 }
 .header__subscribe-button {
   font-style: normal;
@@ -93,7 +120,7 @@
   height: 48px;
   justify-content: center;
   line-height: 24px;
-  width: 350px;
+  max-width: 350px;
 }
 .header__subscribe-button:hover {
   background: #FFF;
@@ -109,8 +136,9 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 auto;
   padding: 80px 20px 80px;
+  max-width: 1400px;
 }
 .about__title {
   justify-self: flex-start;
@@ -146,7 +174,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1400px;
   padding: 0 20px 80px;
   position: relative;
 }
@@ -179,27 +208,35 @@
 }
 
 .looks {
+  margin: 0;
   font-family: "Prompt", "Arial", sans-serif;
   padding: 0 20px 80px;
+}
+.looks__wrapper {
+  margin: 0 auto;
+  max-width: 1400px;
 }
 .looks__title {
   padding: 0 0 40px;
 }
 .looks__images-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
   list-style-type: none;
   margin: 0;
   padding: 0;
   row-gap: 0;
+  width: 100%;
 }
 .looks__list-item {
   margin: 0;
   max-height: 436px;
+  max-width: 350px;
 }
 .looks__image {
   padding: 0;
+  width: 100%;
 }
 
 .footer {

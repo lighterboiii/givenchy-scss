@@ -58,3 +58,8 @@
     -moz-box-shadow: none;
     box-shadow: none;
 }
+
+@mixin tablet-title {
+    font-size: 32px;
+    line-height: 40px;
+}
