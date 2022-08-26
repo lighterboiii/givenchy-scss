@@ -4,21 +4,36 @@
     &__header {
         @include row-layout;
         align-items: flex-start;
+        box-sizing: border-box;
         justify-content: space-between;
         margin: 0 auto;
-        padding: 80px 20px 80px;
         max-width: 1400px;
+        padding: 80px 20px;
+
+        @media screen and (max-width: 1023px) {
+            padding: 60px 20px 70px;
+            max-width: 768px;
+        }
     }
 
     &__title {
         justify-self: flex-start;
         max-width: 700px;
+
+        @media screen and (max-width: 1023px) {
+            @include tablet-title;
+        }
     }
 
     &__text {
         margin: 0;
         max-width: 700px;
+
+        @media screen and (max-width: 1023px) {
+            max-width: 364px;
+        }
     }
+
     &__text-wrapper {
         @include column-layout;
         gap: 24px;
@@ -28,6 +43,11 @@
 
     &__text_size_small {
         @include small-text;
+
+        @media screen and (max-width: 1023px) { 
+            max-width: 373px;
+            max-height: 384px;
+        }
     }
 
     &__text_size_big {
@@ -39,25 +59,53 @@
         align-items: center;
         margin: 0 auto;
         max-width: 1400px;
-        padding: 0 20px 80px;
         position: relative;
+        padding: 0 20px 80px;
+
+        @media screen and (max-width: 1023px) {
+            max-width: 768px;
+            padding: 0;
+        }
     }
+
     &__section_size_s {
         gap: 82px;
+
+        @media screen and (max-width: 1023px) {
+            padding: 0 11px 120px 20px;
+            gap: 60px;
+        }
     }
 
     &__section_size_m {
         height: 100%;
         min-height: 875px;
+
+        @media screen and (max-width: 1023px) {
+            min-height: 484px;
+            padding: 0 20px 70px;
+        }
     }
 
     &__section_size_xl {
         height: 100%;
         min-height: 1095px;
+
+        @media screen and (max-width: 1023px) {
+            min-height: 607px;
+            padding: 0 20px 80px;
+        }
     }
 
     &__about-img {
         z-index: 1;
+    }
+
+    &__img_size_s {
+        @media screen and (max-width: 1023px) {
+            max-width: 304px;
+            max-height: 304px;
+        }
     }
 
     &__img_size_m {
@@ -66,6 +114,13 @@
         right: 195px;
         top: 0;
         z-index: 1;
+
+        @media screen and (max-width: 1023px) {
+            width: 364px;
+            height: 452px;
+            top: 50px;
+            right: 141px;
+        }
     }
 
     &__img_size_big {
@@ -73,6 +128,10 @@
         right: 20px;
         top: 0;
         z-index: 1;
+
+        @media screen and (max-width: 1023px) {
+            max-width: 485px;
+        }
     }
 
 }
