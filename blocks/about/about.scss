@@ -26,11 +26,13 @@
     &__title {
         justify-self: flex-start;
         max-width: 700px;
+        color: $blacky;
     }
 
     &__text {
         margin: 0;
         max-width: 700px;
+        color: $blacky;
 
         @media screen and (max-width: 1023px) {
             max-width: 364px;

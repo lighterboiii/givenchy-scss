@@ -68,6 +68,7 @@
   align-items: center;
   background: #E7E7E2;
   border: none;
+  color: #0A0A0A;
   cursor: pointer;
   gap: 20px;
   justify-content: center;
@@ -85,6 +86,7 @@
   }
 }
 .header__burger-img {
+  color: #0A0A0A;
   max-height: 48px;
   max-width: 48px;
 }
@@ -213,10 +215,12 @@
 .about__title {
   justify-self: flex-start;
   max-width: 700px;
+  color: #0A0A0A;
 }
 .about__text {
   margin: 0;
   max-width: 700px;
+  color: #0A0A0A;
 }
 @media screen and (max-width: 1023px) {
   .about__text {
@@ -451,6 +455,30 @@
   padding: 0;
   width: 100%;
   height: 100%;
+  -webkit-animation: fade 0.3s linear ease-in-out;
+          animation: fade 0.3s linear ease-in-out;
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .footer {
@@ -599,7 +627,7 @@
   width: 1px;
 }
 .footer__checkbox:checked + .footer__checkbox-visible {
-  background-image: url("../../images/checked.png");
+  background-image: url("../../images/galochka.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
