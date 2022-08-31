@@ -12,6 +12,21 @@
 
 <body class="main">
     <header class="header">
+
+        <div class="header__popup">
+            <div class="header__popup-wrapper">
+                <button class="header__close-button"></button>
+                <nav class="header__popup-navigation">
+                    <ul class="header__popup-menu">
+                        <li class="header__popup-item"><a href="#about" class="header__link">about</a></li>
+                        <li class="header__popup-item"><a href="#looks" class="header__link">looks</a></li>
+                        <li class="header__popup-item"><a href="#footer" class="header__link">Subscribe</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
         <div class="header__wrapper">
             <button class="header__button"><img src="./images/burger-image.png" alt="иконка выпадающего меню"
                     class="header__burger-img">menu</button>
@@ -26,7 +41,7 @@
             </div>
         </div>
     </header>
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__header">
             <h2 class="about__title section-title">about</h2>
             <p class="about__text about__text_size_small">The Spring-Summer ‘21 collection explores Givenchy in the form
@@ -61,7 +76,7 @@
             </div>
         </article>
     </section>
-    <section class="looks">
+    <section class="looks" id="looks">
         <div class="looks__wrapper">
             <h2 class="looks__title section-title">looks</h2>
             <ul class="looks__images-list">
@@ -76,7 +91,7 @@
             </ul>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer__wrapper">
             <h2 class="footer__title">Subscribe to the newsletter and be the first to know about new collection’s drop
                 date

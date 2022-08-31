@@ -12,35 +12,48 @@ headerButton.addEventListener('click', function (evt) {
     footerInput.select();
 });
 
+// открытие/закрытие попапа меню
+const popup = document.querySelector('.header__popup');
+const openButton = document.querySelector('.header__button');
+const closeButton = document.querySelector('.header__close-button');
+
+openButton.addEventListener('click', function(e) {
+  e.preventDefault;
+  popup.classList.add('header__popup_type_opened');
+})
+
+closeButton.addEventListener('click', function(e) {
+  e.preventDefault;
+  popup.classList.remove('header__popup_type_opened');
+})
+
+// перелистывание по клику на ссылку в попапе
+
+
 // смена картинок по таймеру в блоке looks 
-let imgArray = ['looks-1.jpg', 'looks-2.jpg', 'looks-3.jpg', 'looks-4.jpg', 'looks-5.jpg', 'looks-6.jpg', 'looks-7.jpg', 'looks-8.jpg'];
+let imgArray = ['looks-1.jpg', 'looks-2.jpg', 'looks-3.jpg', 'looks-4.jpg', 'looks-5.jpg', 'looks-6.jpg', 'looks-7.jpg', 'looks-8.jpg', 'looks-9.jpeg', 'looks-10.jpeg', 'looks-11.webp'];
 const basePath = "./images/";
 const imageList = document.querySelector('.looks__images-list');
 const images = imageList.querySelectorAll('.looks__image');
-let imagesArray = Array.from(images);
+const imagesArray = Array.from(images);
 
 
 function randomInteger(min, max) {
     let rand = min + Math.random() * (max + 1 - min);
     return Math.floor(rand);
 };
-
-let randomArray = [];
 window.setInterval(function () {
     let randomValueOfImages = randomInteger(1, 3);
     for (let i = 1; i <= randomValueOfImages; i++) {
-        // let randomIndex = randomInteger(0, 7);
-        let randomImage = imgArray[Math.floor(Math.random() * imgArray.length)]
-        if (imagesArray.includes(randomImage) !== true) {
-            randomArray.push(randomImage);
-            randImg = images[Math.floor(Math.random() * images.length)]
-            randImg.src = basePath + randomImage;
-        } else {
-            continue  // прописать условия неповторения картинок в массиве
-        }
+        const randomImage = imgArray[Math.floor(Math.random() * imgArray.length)]
+            if (imagesArray[i].src === basePath + randomImage) {
+                continue;
+            } else {
+                randImg = images[Math.floor(Math.random() * images.length)]
+                randImg.src = basePath + randomImage;
+            }
     }
 }, 1000)
-
 
 
 
@@ -59,3 +72,5 @@ window.setInterval(function () {
 //         }
 //     }, 1000) 
 // }
+
+

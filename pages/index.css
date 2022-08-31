@@ -183,6 +183,87 @@
   border-color: #FFF;
   color: #0A0A0A;
 }
+.header__close-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 48px;
+  height: 48px;
+  background-image: url("../../images/close-button.svg");
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .header__close-button {
+    height: 24px;
+    width: 24px;
+  }
+}
+.header__link {
+  text-decoration: none;
+  color: inherit;
+}
+.header__popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.5s all;
+}
+.header__popup_type_opened {
+  visibility: visible;
+  opacity: 1;
+}
+.header__popup-wrapper {
+  align-items: center;
+  background-color: #000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 810px;
+  justify-content: space-around;
+  padding: 20px;
+  width: 480px;
+}
+@media screen and (max-width: 767px) {
+  .header__popup-wrapper {
+    height: 360px;
+    min-width: 320px;
+    width: 100%;
+  }
+}
+.header__popup-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  align-self: center;
+  gap: 80px;
+}
+@media screen and (max-width: 767px) {
+  .header__popup-menu {
+    height: 296px;
+    gap: 40px;
+  }
+}
+.header__popup-item {
+  color: #FFF;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+}
 
 .about {
   font-family: "Prompt", "Arial", sans-serif;
@@ -450,35 +531,12 @@
   margin: 0;
   max-height: 436px;
   max-width: 350px;
+  box-sizing: border-box;
 }
 .looks__image {
   padding: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-animation: fade 0.3s linear ease-in-out;
-          animation: fade 0.3s linear ease-in-out;
-}
-@-webkit-keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .footer {
