@@ -10,7 +10,7 @@ openButton.addEventListener('click', function (evt) {
 
 closeButton.addEventListener('click', function (evt) {
     evt.preventDefault;
-    popup.classList.remove('header__popup_type_opened');
+    popup.classList.remove('header__popup_type_opened');  
 })
 
 // перелистывание по якорю
