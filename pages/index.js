@@ -48,7 +48,7 @@ function scrollTo(button, section) {
 };
 
 // смена картинок по таймеру в блоке looks 
-let imgArray = ['looks-1.jpg', 'looks-2.jpg', 'looks-3.jpg', 'looks-4.jpg', 'looks-5.jpg', 'looks-6.jpg', 'looks-7.jpg', 'looks-8.jpg', 'looks-9.jpeg', 'looks-10.jpeg', 'looks-11.jpeg', 'looks-12.jpeg', 'looks-13.jpeg', 'looks-14.jpeg','looks-15.jpeg'];
+let imgArray = ['looks-1.jpg', 'looks-2.jpg', 'looks-3.jpg', 'looks-4.jpg', 'looks-5.jpg', 'looks-6.jpg', 'looks-7.jpg', 'looks-8.jpg', 'looks-9.jpeg', 'looks-10.jpeg', 'looks-11.jpeg', 'looks-12.jpeg', 'looks-13.jpeg', 'looks-14.jpeg','looks-15.jpeg', 'looks-2022', 'looks-spb'];
 const basePath = "./images/";
 const imageList = document.querySelector('.looks__images-list');
 const images = imageList.querySelectorAll('.looks__image');
