@@ -689,7 +689,7 @@
   width: 1px;
 }
 .footer__checkbox:checked + .footer__checkbox-visible {
-  background-image: url("../../images/galochka.png");
+  background-image: url("../../images/checked.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70%;
