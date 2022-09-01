@@ -73,7 +73,7 @@
   gap: 20px;
   justify-content: center;
   left: 0;
-  padding: 20px 20px 0;
+  padding: 20px;
   position: absolute;
   top: 0;
   z-index: 3;
@@ -86,7 +86,6 @@
   }
 }
 .header__burger-img {
-  color: #0A0A0A;
   max-height: 48px;
   max-width: 48px;
 }
@@ -189,7 +188,7 @@
   left: 20px;
   width: 48px;
   height: 48px;
-  background-image: url("../../images/close-button.svg");
+  background-image: url("../../images/close-btn.png");
   background-size: cover;
   background-color: transparent;
   border: none;
@@ -212,7 +211,7 @@
   z-index: 4;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0.3s, opacity 0.5s all;
+  transition: visibility 0.2s, opacity 0.2s ease-in;
 }
 .header__popup_type_opened {
   visibility: visible;
@@ -263,6 +262,9 @@
   text-transform: uppercase;
   cursor: pointer;
   text-align: center;
+}
+.header__popup-item:hover {
+  color: #666;
 }
 
 .about {
@@ -685,10 +687,10 @@
   width: 1px;
 }
 .footer__checkbox:checked + .footer__checkbox-visible {
-  background-image: url("../../images/galochka.svg");
+  background-image: url("../../images/galochka.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 70%;
 }
 .footer__checkbox-visible {
   border: 1px solid #FFF;

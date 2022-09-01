@@ -17,13 +17,13 @@ const popup = document.querySelector('.header__popup');
 const openButton = document.querySelector('.header__button');
 const closeButton = document.querySelector('.header__close-button');
 
-openButton.addEventListener('click', function(e) {
-  e.preventDefault;
+openButton.addEventListener('click', function(evt) {
+  evt.preventDefault;
   popup.classList.add('header__popup_type_opened');
 })
 
-closeButton.addEventListener('click', function(e) {
-  e.preventDefault;
+closeButton.addEventListener('click', function(evt) {
+  evt.preventDefault;
   popup.classList.remove('header__popup_type_opened');
 })
 
