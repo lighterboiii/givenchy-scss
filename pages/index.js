@@ -28,7 +28,28 @@ closeButton.addEventListener('click', function(evt) {
 })
 
 // перелистывание по клику на ссылку в попапе
+const aboutButton = document.querySelector('.about');
+const looksButton = document.querySelector('.look');
+const footerButton = document.querySelector('.foot');
 
+const aboutSection = document.getElementById('about');
+const looksSection = document.getElementById('looks');
+const footerSection = document.getElementById('footer');
+
+scrollTo(aboutButton, aboutSection);
+scrollTo(looksButton, looksSection);
+scrollTo(footerButton, footerSection);
+
+
+function scrollTo(button, section) {
+    button.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        section.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+        });
+};
 
 // смена картинок по таймеру в блоке looks 
 let imgArray = ['looks-1.jpg', 'looks-2.jpg', 'looks-3.jpg', 'looks-4.jpg', 'looks-5.jpg', 'looks-6.jpg', 'looks-7.jpg', 'looks-8.jpg', 'looks-9.jpeg', 'looks-10.jpeg', 'looks-11.webp'];
