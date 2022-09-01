@@ -188,10 +188,6 @@
   left: 20px;
   width: 48px;
   height: 48px;
-  background-image: url("../../images/close-btn.png");
-  background-size: cover;
-  background-color: transparent;
-  border: none;
   cursor: pointer;
 }
 @media screen and (max-width: 767px) {
@@ -689,7 +685,7 @@
   width: 1px;
 }
 .footer__checkbox:checked + .footer__checkbox-visible {
-  background-image: url("../../images/checked.svg");
+  background-image: url(../../images/check.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70%;
