@@ -1,0 +1,7 @@
+.fading-right {
+    animation: fadingRight 3s ease-out;
+  
+    @media screen and (max-width: 767px) {
+      animation: none;
+    }
+  }

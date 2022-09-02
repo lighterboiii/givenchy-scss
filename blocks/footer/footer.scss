@@ -49,19 +49,23 @@
 
     &__submit-button {
         @include button-text;
+        @include font-family;
         @include row-layout;
         align-items: center;
         background-color: $whitey;
-        border: none;
+        border: 0.5px solid $whitey;
+        box-sizing: border-box;
         color: $blacky;
         cursor: pointer;
         justify-content: center;
         max-width: 108px;
+        padding: 12px;
         width: 100%;
+        
 
         @media screen and (max-width: 767px) {
+            @include mobile-button-text;
             max-width: 280px;
-            height: 44px;
         }
 
         &:hover {
@@ -120,7 +124,7 @@
         width: 1px; 
 
         &:checked + .footer__checkbox-visible {
-            background-image: url('../../images/check.png');
+            background-image: url(../../images/check.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: 70%;
