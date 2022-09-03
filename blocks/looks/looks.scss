@@ -50,7 +50,8 @@
     &__list-item {
         margin: 0;
         max-height: 436px;
-        max-width: 350px;
+        overflow: hidden;
+        max-width: 363,5px;
         box-sizing: border-box;
     }
 
