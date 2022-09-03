@@ -532,7 +532,8 @@
 .looks__list-item {
   margin: 0;
   max-height: 436px;
-  max-width: 350px;
+  overflow: hidden;
+  max-width: 363, 5px;
   box-sizing: border-box;
 }
 .looks__image {
@@ -589,6 +590,7 @@
   flex-direction: row;
   border: 0.5px solid #FFF;
   box-sizing: border-box;
+  height: 48px;
 }
 @media screen and (max-width: 767px) {
   .footer__input-wrapper {
@@ -615,18 +617,19 @@
   cursor: pointer;
   justify-content: center;
   max-width: 108px;
-  padding: 12px 24px;
+  width: 100%;
+  height: 100%;
 }
 @media screen and (max-width: 767px) {
   .footer__submit-button {
     font-size: 14px;
     line-height: 20px;
     max-width: 280px;
+    height: 44px;
   }
 }
 .footer__submit-button:hover {
   background-color: #0A0A0A;
-  border: 0.5px solid #FFF;
   color: #FFF;
 }
 .footer__title {
@@ -690,7 +693,7 @@
   width: 1px;
 }
 .footer__checkbox:checked + .footer__checkbox-visible {
-  background-image: url(../../images/checked.svg);
+  background-image: url(../images/checked.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70%;
