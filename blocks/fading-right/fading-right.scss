@@ -1,0 +1,19 @@
+.fading-right {
+    animation: fadingRight 3s ease-out;
+  
+    @media screen and (max-width: 767px) {
+      animation: none;
+    }
+
+    @keyframes fadingRight {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%);
+     }
+     100% {
+        opacity: 1;
+        transform: translateX(0);
+     }
+    }
+    
+  }
