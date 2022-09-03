@@ -170,7 +170,6 @@
         position: absolute;
         right: 195px;
         top: 0;
-        z-index: 1;
 
         @media screen and (max-width: 1023px) {
             max-width: 364px;
@@ -182,7 +181,6 @@
         @media screen and (max-width: 767px) {
             position: relative;
             left: 0;
-            top: 0;
         }
     }
 
@@ -190,7 +188,6 @@
         position: absolute;
         right: 20px;
         top: 0;
-        z-index: 1;
 
         @media screen and (max-width: 1023px) {
             max-width: 485px;
@@ -199,7 +196,6 @@
         @media screen and (max-width: 767px) {
             position: relative;
             left: 0;
-            top: 0;
         }
     }
 

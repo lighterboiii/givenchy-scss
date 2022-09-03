@@ -446,7 +446,6 @@
   position: absolute;
   right: 195px;
   top: 0;
-  z-index: 1;
 }
 @media screen and (max-width: 1023px) {
   .about__img_size_m {
@@ -460,14 +459,12 @@
   .about__img_size_m {
     position: relative;
     left: 0;
-    top: 0;
   }
 }
 .about__img_size_big {
   position: absolute;
   right: 20px;
   top: 0;
-  z-index: 1;
 }
 @media screen and (max-width: 1023px) {
   .about__img_size_big {
@@ -478,7 +475,6 @@
   .about__img_size_big {
     position: relative;
     left: 0;
-    top: 0;
   }
 }
 
@@ -580,8 +576,8 @@
   color: #FFF;
   max-width: 700px;
   padding: 12px 24px;
-  width: 100%;
   box-sizing: border-box;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .footer__input {
@@ -593,7 +589,6 @@
   flex-direction: row;
   border: 0.5px solid #FFF;
   box-sizing: border-box;
-  height: 48px;
 }
 @media screen and (max-width: 767px) {
   .footer__input-wrapper {
@@ -620,8 +615,7 @@
   cursor: pointer;
   justify-content: center;
   max-width: 108px;
-  padding: 12px;
-  width: 100%;
+  padding: 12px 24px;
 }
 @media screen and (max-width: 767px) {
   .footer__submit-button {
@@ -696,7 +690,7 @@
   width: 1px;
 }
 .footer__checkbox:checked + .footer__checkbox-visible {
-  background-image: url("../../images/checked.svg");
+  background-image: url(../../images/checked.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70%;
@@ -710,6 +704,16 @@
   width: 100%;
 }
 
+.fading-right {
+  -webkit-animation: fadingRight 3s ease-out;
+          animation: fadingRight 3s ease-out;
+}
+@media screen and (max-width: 767px) {
+  .fading-right {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 @-webkit-keyframes fadingRight {
   0% {
     opacity: 0;
@@ -720,7 +724,6 @@
     transform: translateX(0);
   }
 }
-
 @keyframes fadingRight {
   0% {
     opacity: 0;
@@ -730,6 +733,11 @@
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.fading-left {
+  -webkit-animation: fadingLeft 3s ease-out;
+          animation: fadingLeft 3s ease-out;
 }
 @-webkit-keyframes fadingLeft {
   0% {
@@ -750,21 +758,6 @@
     opacity: 1;
     transform: translateX(0);
   }
-}
-.fading-right {
-  -webkit-animation: fadingRight 3s ease-out;
-          animation: fadingRight 3s ease-out;
-}
-@media screen and (max-width: 767px) {
-  .fading-right {
-    -webkit-animation: none;
-            animation: none;
-  }
-}
-
-.fading-left {
-  -webkit-animation: fadingLeft 3s ease-out;
-          animation: fadingLeft 3s ease-out;
 }
 @media screen and (max-width: 767px) {
   .fading-left {
