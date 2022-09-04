@@ -66,12 +66,6 @@
         @extend .about__header-text;
         margin-top: 167px;
 
-
-        // @media screen and (max-width: 1023px) { 
-        //     max-width: 364px;
-        //     margin-top: 0;
-        // }
-
         @media screen and (max-width: 1023px) {
             margin-top: 0;
         }
@@ -180,6 +174,7 @@
 
         @media screen and (max-width: 767px) {
             position: relative;
+            top: 0;
             left: 0;
         }
     }

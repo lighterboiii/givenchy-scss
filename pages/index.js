@@ -52,8 +52,6 @@ let imgArray = ['looks-1.jpg', 'looks-2.jpg', 'looks-3.jpg', 'looks-4.jpg', 'loo
 const basePath = "./images/";
 const imageList = document.querySelector('.looks__images-list');
 const images = imageList.querySelectorAll('.looks__image');
-const imagesArray = Array.from(images);
-
 
 function randomInteger(min, max) {
     let rand = min + Math.random() * (max + 1 - min);
@@ -63,25 +61,7 @@ window.setInterval(function () {
     let randomValueOfImages = randomInteger(1, 3);
     for (let i = 1; i <= randomValueOfImages; i++) {
         const randomImage = imgArray[Math.floor(Math.random() * imgArray.length)]
-            randImg = images[Math.floor(Math.random() * images.length)]
-            randImg.src = basePath + randomImage;
+        let randImg = images[Math.floor(Math.random() * images.length)]
+        randImg.src = basePath + randomImage;
     }
 }, 1000)
-
-
-
-    // swapImage();
-
-// function swapImage () {
-//     window.setInterval(function () {
-//         for (let i = 0; i < imgArray.length; i++) {
-//             let randomImage = imgArray[Math.floor(Math.random() * imgArray.length)]
-//             randImg = images[Math.floor(Math.random() * images.length)]
-//             randImg.src = basePath + randomImage;
-
-//             if (randomImage.value === images[i].src) {
-//                 continue
-//             }
-//         }
-//     }, 1000) 
-// }
