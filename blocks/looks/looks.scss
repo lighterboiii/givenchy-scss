@@ -27,7 +27,8 @@
     &__images-list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-rows: 0;
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -36,8 +37,6 @@
 
         @media screen and (max-width: 1023px) {
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-auto-rows: 0;
             overflow: hidden;
         }
 
