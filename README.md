@@ -11,6 +11,6 @@
 Откройте файл index.html в вашем браузере
 ____
 ### Сайт доступен на github-pages
-![Ссылка](https://lighterboiii.github.io/givenchy-scss/)
+[Ссылка](https://lighterboiii.github.io/givenchy-scss/)
 
 
